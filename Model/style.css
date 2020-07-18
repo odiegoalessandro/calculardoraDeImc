@@ -104,6 +104,7 @@ body{
     flex-wrap: wrap;
     padding: 10px;
     width: 600px;
+    padding: 30px;
     height: 400px;
     background: #fff;
 }
@@ -130,4 +131,12 @@ body{
 }
 .modal.fecha{
     display: none;
+}
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
 }

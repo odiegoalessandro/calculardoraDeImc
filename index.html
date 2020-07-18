@@ -4,33 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./View/css/style.css">
+    <link rel="stylesheet" href="./Model/style.css">
 </head>
 <body>
     <div class="box" id="box">
         <div class="modal" id="modal">
             <button class="btn--exit" id="btn--exit">x</button>
             <p>
-                Não conhece meu git hub? Acesse meu git hub
+                Não conhece meu git hub? Acesse meu GitHub
                 <a href=" https://github.com/odiegoalessandro"> https://github.com/odiegoalessandro</a> <br>
-                Obs: não se esqueça de dar estrelas nos projetos que você usar ; )
+                Obs: não se esqueça de dar estrelas nos projetos que você usar ; ) <br>
+                Obs do obs: Eu sei que esse modal esta feio nessa hora meu cerebro ja
+                tinha derretido então não consegui pensar em algo melhor caso ache um
+                design melhor faça um fork no meu GitHub
             </p>
         </div>
     </div>
     <div class="container">
-        <h2 class="title">Calcule seu imc</h2>
-        <div class="table" id="table">
 
-        </div>
-        <input type="number" placeholder="Digite seu peso" class="input" id="input--weight">
-        <input type="number" placeholder="Digite sua altura" class="input" id="input--height">
+        <h2 class="title">Calcule seu imc</h2>
+
+        <div class="table" id="table"></div>     
+
+        <input type="number" placeholder="Digite seu peso" class="input" id="input--weight" required>
+        <input type="number" placeholder="Digite sua altura" class="input" id="input--height" required>
+
         <button class="btn btn--clear" id="btn--clear">Limpar</button>
         <button class=" btn btn--calc" id="btn--calc">Calcular</button><br>
+
         <div class="imc--box">
+
             <p class="output--imc">Seu imc: </p>
             <p class="output--imc-value" id="imc-value"></p>
+
         </div>
-   </div>
-   <script src="./Controller/index.js"></script>
+    </div>
+    <script src="./Controller/index.js">
+    </script>
 </body>
 </html>
