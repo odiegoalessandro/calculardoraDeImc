@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+   <div class="container">
+        <h2 class="title">Calcule seu imc</h2>
+        <div class="table" id="table">
+
+        </div>
+        <input type="number" placeholder="Digite seu peso" class="input" id="input--weight">
+        <input type="number" placeholder="Digite sua altura" class="input" id="input--height">
+        <button class="btn btn--clear">Limpar</button>
+        <button class=" btn btn--calc" id="btn--calc">Calcular</button><br>
+        <div class="imc--box">
+            <p class="output--imc">Seu imc: </p>
+            <p class="output--imc-value" id="imc-value"></p>
+        </div>
+   </div>
+   <script src="../Controller/index.js"></script>
+</body>
+</html>
