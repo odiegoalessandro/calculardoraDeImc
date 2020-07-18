@@ -41,6 +41,7 @@ body{
 }
 .btn:hover{
     background: #121292;
+    color: #000;
 }
 .btn{
     display: inline-block;
