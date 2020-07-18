@@ -20,9 +20,11 @@ btn_calc.addEventListener('click', () => {
     let imc = (weight / (height * height)).toFixed(1)
     var imc_value = document.getElementById('imc-value')
     imc_value.innerText = imc
-    if(height.length < 1|| weight.length < 1){
+    if(height.length < 1|| weight.length < 1 || age.length < 1 || name.lengt < 1){
         alert('Numero Invalido')
         imc_value.innerText = ""
+        information.removeChild(information.lastChild)
+
     }    
     if(imc < 18.5){
         imc_text.innerText = "Magreza"
@@ -54,9 +56,9 @@ btn_calc.addEventListener('click', () => {
     weight_td.innerText = weight
     createTr.appendChild(name_td)
     createTr.appendChild(age_td)
-    createTr.appendChild(imc_td)
     createTr.appendChild(height_td)
     createTr.appendChild(weight_td)
+    createTr.appendChild(imc_td)
     console.log(createTr)
     table.appendChild(imc_text)
     let information = document.getElementById('information')
