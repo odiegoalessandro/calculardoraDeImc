@@ -41,7 +41,7 @@ body{
 }
 .btn:hover{
     background: #121292;
-    color: #000;
+    color: #fff;
 }
 .btn{
     display: inline-block;
@@ -85,4 +85,49 @@ body{
 .imc--box{
     margin-top: 30px;
     margin-right: 100px;
+}
+.box{
+    background: #0000009c;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 500px;
+    height: 100px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: absolute;
+    z-index: 100;
+}
+.modal{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    width: 600px;
+    height: 400px;
+    background: #fff;
+}
+.btn--exit{
+    color: #000000;
+    font-weight: bold;
+    width: 20px;
+    float: right;
+    height: 20px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: none;
+    font-size: 15px;
+    background: #fff;
+    padding-bottom: 5px;    
+}
+.btn--exit:hover{
+    background: #c0b8b8;
+    color: #fff;
+    transition: 0.5s;
+}
+.box.fecha{
+    display: none;
+}
+.modal.fecha{
+    display: none;
 }

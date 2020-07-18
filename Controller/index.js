@@ -1,5 +1,7 @@
 var btn_calc = document.getElementById('btn--calc')
 var table = document.getElementById('table')
+var btn_clear = document.getElementById('btn--clear')
+var corpo = document.querySelector('body')
 
 btn_calc.addEventListener('click', () => {
     if(table.hasChildNodes()){
@@ -8,8 +10,10 @@ btn_calc.addEventListener('click', () => {
     let height = document.getElementById('input--height').value
     let weight = document.getElementById('input--weight').value
     let imc_text = document.createElement('h3')
+   
     imc_text.classList.add('imc-category')
     let imc = (weight / (height * height)).toFixed(1)
+    
     if(imc < 18.5){
         imc_text.innerText = "Magreza"
     }
@@ -27,7 +31,24 @@ btn_calc.addEventListener('click', () => {
     }
     let imc_value = document.getElementById('imc-value')
     imc_value.innerText = imc
-    console.log(imc_text);
-    console.log(imc);
     table.appendChild(imc_text)
+})
+btn_clear.addEventListener('click', () => {
+    let height = document.getElementById('input--height').value = ""
+    let weight = document.getElementById('input--weight').value = ""
+    let imc_text = document.createElement('h3')
+    let imc_value = document.getElementById('imc-value')
+    if(table.hasChildNodes){
+        table.removeChild(table.lastChild)
+    }
+    imc_value.innerText = ""
+})
+
+var box = document.getElementById('box')
+var modal = document.getElementById('modal')
+var btn_exit = document.querySelector('#btn--exit')
+
+btn_exit.addEventListener('click', () => {
+    box.classList.add('fecha')
+    modal.classList.add('fecha')
 })
