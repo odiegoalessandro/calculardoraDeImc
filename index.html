@@ -46,7 +46,7 @@
             <input type="number" maxlength="3" placeholder="Digite sua idade" class="input" id="input--age" required>
             <input type="number" placeholder="Digite seu peso" class="input" id="input--weight" required>
             <input type="number" placeholder="Digite sua altura" class="input" id="input--height" required>
-            <button class="btn btn--clear" id="btn--clear">Limpar</button>
+            <button class="btn btn--clear" id="btn--clear" onclick="controller.reseta(event)" >Limpar</button>
             <button class=" btn btn--calc" id="btn--calc" onclick="controller.enviarParaView(event)">Calcular</button><br>
         </form>
     </section>

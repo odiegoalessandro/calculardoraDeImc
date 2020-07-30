@@ -16,4 +16,8 @@ class imcController{
         this._view.update(this.criaImc())
         this._form.reset()
     }
+    reseta(event){
+        event.preventDefault()
+        this._form.reset()
+    }
 }
