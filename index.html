@@ -32,6 +32,7 @@
                     <th>Altura</th>
                     <th>Peso</th>
                     <th>IMC</th>
+                    <th>Categoria</th>
                 </tr>
             </thead>
             <tbody id="corpo_tabela">
@@ -39,7 +40,6 @@
             </tbody>
         </table>
         <h2 class="title">Calcule seu imc</h2>
-
     <section class="table" id="table">
         <form id="form">
             <input type="text" maxlength="18" placeholder="Digite seu nome" class="input" id="input--name" required>
@@ -50,12 +50,17 @@
             <button class=" btn btn--calc" id="btn--calc" onclick="controller.enviarParaView(event)">Calcular</button><br>
         </form>
     </section>
+
     <script src="./Controller/imcController.js"></script>
     <script src="./Model/imcModel.js"></script>
     <script src="./View/imcView.js"></script>
     <script>
+        this._peso = document.getElementById('input--weight')
+        this._altura = document.getElementById('input--height')
+        this._nome = document.getElementById('input--name')
+        this._idade = document.getElementById('input--age')
+        this._corpo_tabela = document.getElementById('corpo_tabela')
         let controller = new imcController()
     </script>
-
 </body>
 </html>

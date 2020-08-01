@@ -7,9 +7,11 @@ class imcController{
         this._corpo_tabela = document.getElementById('corpo_tabela')
         this._view = new imcView(this._corpo_tabela)
         this._form = document.getElementById('form')
+        this._imc_value = document.getElementById('imc--value')
+        this._imc_view = document.getElementById('imc--value')
     }
     criaImc(){
-        return new imcModel(this._nome.value, this._idade.value, this._altura.value, this._peso.value)
+        return new imcModel(this._nome.value, this._idade.value, this._altura.value, this._peso.value, this._imc_view)
     }
     enviarParaView(event){
         event.preventDefault()

@@ -15,6 +15,7 @@ class imcView{
         criaLinha.appendChild(this.criaTd(linha.altura, "altura"))
         criaLinha.appendChild(this.criaTd(linha.peso, "peso"))
         criaLinha.appendChild(this.criaTd(linha.imc, linha.verificaAprovacao()))
+        criaLinha.appendChild(this.criaTd(linha.verificaCategoria(), linha.verificaCategoria()))
         return criaLinha
     }
     criaTd(slot, classe){

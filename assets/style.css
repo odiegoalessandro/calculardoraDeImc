@@ -144,12 +144,6 @@ input[type=number]::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
-.aprovado{
-    color: blue;
-}
 .form{
     background: transparent;
-}
-.reprovado{
-    color: red;
 }

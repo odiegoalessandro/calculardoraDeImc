@@ -21,6 +21,9 @@ class imcModel{
         var total = (this._peso / (this._altura * this._altura)).toFixed(1)
         return total
     }
+    get categoria(){
+        return this.verificaCategoria()
+    }
     verificaAprovacao(){
         if(this.imc > 18.5 && this.imc < 24.9){
             return "aprovado"
@@ -29,4 +32,22 @@ class imcModel{
             return "reprovado"
         }
     }
+    verificaCategoria(){
+        if(this.imc < 18.5){
+            return "Magreza"
+        }
+        if(this.imc > 18.5 && this.imc < 24.9){
+            return "Comum"
+        }
+        if(this.imc > 25 && this.imc < 29.9){
+            return "Obesidade I"
+        }
+        if(this.imc > 30 && this.imc < 39.9){
+            return "Obesidade II"
+        }
+        if(this.imc >= 40){
+            return "Obesidade III"
+        }
+    }
+
 }
